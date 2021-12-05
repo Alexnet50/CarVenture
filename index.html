@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- General meta tags needed-->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Needed for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+
+        <title>CarVenture</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Fenix&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Poppins&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS File -->
+        <link rel="stylesheet" href="dist/style.css?cb=1638737724843">     
+
+        
+    </head>
+    <body>
+        <header class="header container-lg">        
+            <div class="header-container container-lg flex relative align-center">                
+                <a href="#" class="logo font-32 weight-500">CarVenture</a>
+                    
+                <div class="header-burger"></div>
+                
+
+                <nav class="header-nav">
+                    <ul class="nav-items flex align-center font-24 weight-400">
+                        <li class="nav-item"><a href="#" class="header-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="header-link">Cars</a></li>
+                        <li class="nav-item"><a href="#" class="header-link">Offers</a></li>
+                        <li class="nav-item"><a href="#" class="header-link">Locations</a></li>
+                        <li class="nav-item"><a href="#" class="header-link">Contact</a></li>
+
+                        <a href="#" class="btn-signup button-lg">Sign Up</a>
+                    </ul>
+                </nav>                
+            </div>        
+        </header>
+
+        <main>
+            <section class="hero container-lg flex-column-start relative margin-b-180">
+
+                <div class="hero-content flex-column-start">
+                    <h1 class="hero-title font-64 weight-800 margin-b-10">Renting cars have never been this easy</h1>
+                    <p class="desc font-18 weight-600 margin-b-30">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+
+                <div class="search-block">                    
+                    <form class="search flex">                        
+                        <div class="search-field flex-column-start">
+                            <div class="field-title">PICK UP LOCATION</div>
+                            <select class="location" name="location" id="location">
+                                <option value="Select" disabled selected hidden>Select Location</option>
+                                    
+                                <option value="Washington">Washington</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="San Francisco">San Francisco</option>
+                            </select>
+                        </div>
+
+                        <div class="search-field flex-column-start">
+                            <div class="pickup-field-title">PICK UP DATE</div>
+                            <input class="pickup-date" type="text" placeholder="Select Date" onfocus="(this.type='date')" onblur="(this.type='text')" id="pickup-date">
+                        </div>
+
+                        <div class="search-field flex-column-start">
+                            <div class="return-field-title">RETURN DATE</div>                           
+                            <input class="return-date" type="text" placeholder="Select Date" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date">                           
+                        </div>
+                        
+
+                        <input class="button-s btn-submit" type="submit" value="Search For Cars">                        
+                    </form>
+                </div>
+            </section>
+
+            <section class="brand-logo-block container-lg flex margin-b-100">
+                <div class="brand-logo brand-logo-1"></div>
+                <div class="brand-logo brand-logo-2"></div>
+                <div class="brand-logo brand-logo-3"></div>
+                <div class="brand-logo brand-logo-4"></div>
+                <div class="brand-logo brand-logo-5"></div>
+            </section>
+
+            <section class="cars-block container-lg flex-column margin-b-100">
+                <h2 class="block-title">Our Featured Cars</h2>
+
+                <div class="arrows-block flex">
+                    <div class="arrow arrow-left"></div>
+                    <div class="arrow arrow-right"></div>
+                </div>
+
+                <div class="cars-variants container-lg flex">
+                    <div class="car-variant flex-column-start">
+                        <img class="car-image car-img-1" src="./dist/images/car-img-1.png" alt="Toyota Corolla T-20">
+
+                        <div class="car-title">Toyota Corolla T-20</div>
+
+                        <ul class="car-features">
+                            <li class="feature">Air Conditioned</li>
+                            <li class="feature">Bluetooth Sound System</li>
+                            <li class="feature">Sunroof Available</li>
+                        </ul>
+
+                        <a href="#" class="rent-button button-m">Rent Now</a>
+                    </div>              
+
+                    <div class="car-variant flex-column-start">
+                        <img class="car-image car-img-2" src="./dist/images/car-img-2.png" alt="Toyota Corolla T-20">
+
+                        <div class="car-title">Toyota Corolla T-20</div>
+
+                        <ul class="car-features">
+                            <li class="feature">Air Conditioned</li>
+                            <li class="feature">Bluetooth Sound System</li>
+                            <li class="feature">Sunroof Available</li>
+                        </ul>
+
+                        <a href="#" class="rent-button button-m">Rent Now</a>
+                    </div>               
+
+                    <div class="car-variant flex-column-start">
+                        <img class="car-image car-img-3" src="./dist/images/car-img-3.png" alt="Toyota Corolla T-20">
+
+                        <div class="car-title">Toyota Corolla T-20</div>
+
+                        <ul class="car-features">
+                            <li class="feature">Air Conditioned</li>
+                            <li class="feature">Bluetooth Sound System</li>
+                            <li class="feature">Sunroof Available</li>
+                        </ul>
+
+                        <a href="#" class="rent-button button-m">Rent Now</a>
+                    </div>
+                </div>
+
+                <div class="arrows-block arrows-block-hidden flex">
+                    <div class="arrow arrow-left"></div>
+                    <div class="arrow arrow-right"></div>
+                </div>
+            </section>
+
+            <section class="differences-block container-lg flex-column">
+                <h2 class="block-title">Why We Are Different</h2>
+
+                <p class="block-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            
+                <div class="differences container-lg flex">
+                    <div class="difference flex-column">
+                        <div class="icon-dif icon-booking"></div>
+
+                        <div class="dif-title">Easy Booking</div>
+
+                        <div class="dif-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
+                    </div>
+
+                    <div class="difference flex-column">
+                        <div class="icon-dif icon-secure"></div>
+
+                        <div class="dif-title">Secure Payments</div>
+
+                        <div class="dif-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
+                    </div>
+
+                    <div class="difference flex-column">
+                        <div class="icon-dif icon-tracking"></div>
+
+                        <div class="dif-title">24/7 Tracking</div>
+
+                        <div class="dif-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="people-block container-lg flex-column">
+                <h2 class="block-title">What do people say about us?</h2>
+
+                <p class="block-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            
+                <div class="people flex">
+                    <img class="person-img" src="./dist/images/DeSuza.png" height="682" alt="Anna De’Suza">
+
+                    <div class="reply flex-column-start">                        
+                        <p class="reply-text">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.“</p>                        
+                        <div class="hr"></div>
+                        <div class="person">Anna De’Suza,</div>
+                        <div class="position">CEO at SpaceX</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stories-block container-lg flex-column">
+                <h2 class="block-title">Read Our Stories</h2>
+                
+                <div class="stories container-lg flex">
+                    <div class="story flex-column-start">
+                        <img class="story-img story-img-1" src="./dist/images/blog-image-1.png" alt="Blog-1">
+                        <div class="tags">Tags</div>
+                        <div class="story-title">Start a blog to reach your creative peak</div>
+                        <div class="story-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
+                        <a href="#" class="find-button">Find Out More</a>
+                    </div>
+
+                    <div class="story flex-column-start">
+                        <img class="story-img story-img-2" src="./dist/images/blog-image-2.png" alt="Blog-2">
+                        <div class="tags">Tags</div>
+                        <div class="story-title">Starting your traveling blog with Vasco</div>
+                        <div class="story-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
+                        <a href="#" class="find-button">Find Out More</a>
+                    </div>
+
+                    <div class="story flex-column-start">
+                        <img class="story-img story-img-3" src="./dist/images/blog-image-3.png" alt="Blog-3">
+                        <div class="tags">Tags</div>
+                        <div class="story-title">Caring is the new marketing</div>
+                        <div class="story-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
+                        <a href="#" class="find-button">Find Out More</a>
+                    </div>
+                </div>
+
+                <div class="arrows-block arrows-block-hidden flex">
+                    <div class="arrow arrow-left"></div>
+                    <div class="arrow arrow-right"></div>
+                </div>
+            </section>
+
+            <section class="finder-block container-lg flex-column">
+                <h2 class="block-title">Find Your Next Long Drive Now!</h2>
+
+                <div class="search-block">                    
+                    <form class="search flex">                        
+                        <div class="search-field flex-column-start">
+                            <div class="field-title">PICK UP LOCATION</div>
+                            <select class="location" name="location" id="location">
+                                <option value="Select" disabled selected hidden>Select Location</option>
+                                    
+                                <option value="Washington">Washington</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="San Francisco">San Francisco</option>
+                            </select>
+                        </div>
+
+                        <div class="search-field flex-column-start">
+                            <div class="pickup-field-title">PICK UP DATE</div>
+                            <input class="pickup-date" type="text" placeholder="Select Date" onfocus="(this.type='date')" onblur="(this.type='text')" id="pickup-date">
+                        </div>
+
+                        <div class="search-field flex-column-start">
+                            <div class="return-field-title">RETURN DATE</div>                           
+                            <input class="return-date" type="text" placeholder="Select Date" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date">                           
+                        </div>
+                        
+
+                        <input class="button-s btn-submit" type="submit" value="Search For Cars">                        
+                    </form>
+                </div>
+            </section>            
+        </main>
+
+        <footer class="footer container-lg flex-column-start">
+            <div class="footer-main flex">
+                <div class="logo-block flex-column-start">
+                    <a href="#" class="logo">CarVenture</a>    
+                    <p class="logo-desc">Rides for the daily achievers</p>  
+                </div>
+    
+                <div class="links flex">
+                    <nav class="links-block">
+                        <h3 class="block-title">Company</h3>
+    
+                        <ul class="nav-items">                        
+                            <li class="nav-item"><a href="#">About Us</a></li>
+                            <li class="nav-item"><a href="#">Careers</a></li>
+                            <li class="nav-item"><a href="#">Support</a></li>
+                            <li class="nav-item"><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </nav>
+    
+                    <nav class="links-block">
+                        <h3 class="block-title">Features</h3>
+    
+                        <ul class="nav-items">                        
+                            <li class="nav-item"><a href="#">Vehicle Tracker</a></li>
+                            <li class="nav-item"><a href="#">iOS & Android Apps</a></li>
+                            <li class="nav-item"><a href="#">Business Trips</a></li>
+                            <li class="nav-item"><a href="#">Locations</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="links-block">
+                        <h3 class="block-title">Contact Us</h3>
+    
+                        <ul class="contacts-items">                        
+                            <li class="contact-item"><a href="mailto:info@teamapp.com">info@teamapp.com</a></li>
+                            <li class="contact-item">(302) 555-0107</li>
+                            <li class="contact-item">2972 Westheimer Rd. Santa Ana, Illinois 85486</li>                            
+                        </ul>
+                    </nav>
+    
+                    <div class="subscribe-block">
+                        <h3 class="block-title">Get deals and discounts</h3>
+    
+                        <p class="subscribe-desc">Subscribe to our newsletter</p>
+    
+                        <form class="subscribe-form flex" action="formdata.php" method="post">
+                            <label class="subscribe">
+                                <input type="email" class="email-input" placeholder="Email">                        
+                            </label>
+                        </form>
+    
+                        <input class="button-subscribe button-lg" type="submit" value="Subscribe">                        
+                    </div>                
+                </div>
+            </div>
+    
+            <div class="footer-bottom">© Copyright Team Inc.</div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./app/js/script.js"></script>
+    </body>
+</html>
