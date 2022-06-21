@@ -15,7 +15,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Fenix&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Poppins&display=swap" rel="stylesheet"> 
         
         <!-- CSS File -->
-        <link rel="stylesheet" href="dist/style.css?cb=1638737724843">     
+          
+        <link rel="stylesheet" type="text/css" href="app/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="app/slick/slick-theme.css"/> 
+        <link rel="stylesheet" href="dist/style.css?cb=1655825333749">  
 
         
     </head>
@@ -91,10 +94,10 @@
                 <h2 class="block-title">Our Featured Cars</h2>
 
                 <div class="arrows-block flex">
-                    <div class="arrow arrow-left"></div>
-                    <div class="arrow arrow-right"></div>
+                    <div class="arrow arrow-left" id="arrow-left-show"></div>
+                    <div class="arrow arrow-right" id="arrow-right-show"></div>
                 </div>
-
+                
                 <div class="cars-variants container-lg flex">
                     <div class="car-variant flex-column-start">
                         <img class="car-image car-img-1" src="./dist/images/car-img-1.png" alt="Toyota Corolla T-20">
@@ -125,6 +128,20 @@
                     </div>               
 
                     <div class="car-variant flex-column-start">
+                        <img class="car-image car-img-1" src="./dist/images/car-img-1.png" alt="Toyota Corolla T-20">
+
+                        <div class="car-title">Toyota Corolla T-20</div>
+
+                        <ul class="car-features">
+                            <li class="feature">Air Conditioned</li>
+                            <li class="feature">Bluetooth Sound System</li>
+                            <li class="feature">Sunroof Available</li>
+                        </ul>
+
+                        <a href="#" class="rent-button button-m">Rent Now</a>
+                    </div>              
+
+                    <div class="car-variant flex-column-start">
                         <img class="car-image car-img-3" src="./dist/images/car-img-3.png" alt="Toyota Corolla T-20">
 
                         <div class="car-title">Toyota Corolla T-20</div>
@@ -140,8 +157,8 @@
                 </div>
 
                 <div class="arrows-block arrows-block-hidden flex">
-                    <div class="arrow arrow-left"></div>
-                    <div class="arrow arrow-right"></div>
+                    <div class="arrow arrow-left" id="arrow-left-hid"></div>
+                    <div class="arrow arrow-right" id="arrow-right-hid"></div>
                 </div>
             </section>
 
@@ -196,6 +213,11 @@
 
             <section class="stories-block container-lg flex-column">
                 <h2 class="block-title">Read Our Stories</h2>
+
+                <div class="arrows-block arrows-block-stories flex">
+                    <div class="arrow arrow-left" id="arrow-left-stories"></div>
+                    <div class="arrow arrow-right" id="arrow-right-stories"></div>
+                </div>
                 
                 <div class="stories container-lg flex">
                     <div class="story flex-column-start">
@@ -221,12 +243,7 @@
                         <div class="story-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </div>
                         <a href="#" class="find-button">Find Out More</a>
                     </div>
-                </div>
-
-                <div class="arrows-block arrows-block-hidden flex">
-                    <div class="arrow arrow-left"></div>
-                    <div class="arrow arrow-right"></div>
-                </div>
+                </div>                               
             </section>
 
             <section class="finder-block container-lg flex-column">
@@ -323,6 +340,7 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./app/slick/slick.min.js"></script>
         <script src="./app/js/script.js"></script>
     </body>
 </html>
